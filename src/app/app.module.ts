@@ -50,7 +50,6 @@ import { HighlightDirective } from './directives/highlight.directive';
     FormsModule,
     HttpModule,
     BrowserAnimationsModule,
-    MatIconModule,
     MatButtonModule, MatCheckboxModule, MatDatepickerModule, MatFormFieldModule,
     MatInputModule, MatRadioModule, MatSelectModule, MatSliderModule,
     MatSlideToggleModule, MatToolbarModule, MatListModule, MatGridListModule,
@@ -69,4 +68,4 @@ import { HighlightDirective } from './directives/highlight.directive';
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }
