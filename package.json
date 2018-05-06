@@ -10,7 +10,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "mock-server": "json-server db.json -d 2000 --port 3000",
-    "postinstall": "ng build --aot -prod"
+    "postinstall": "ng build --aot --target=production"
   },
   "engines": {
     "node": "8.7.0",
@@ -40,7 +40,7 @@
     "ngx-restangular": "^1.1.5",
     "rxjs": "^5.4.3",
     "zone.js": "^0.8.18",
-    "typescript": "^2.5.3"
+    "typescript": "^2.3.3"
   },
   "devDependencies": {
     "@angular/cli": "^1.5.0",
