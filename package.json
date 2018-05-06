@@ -1,17 +1,16 @@
 {
   "name": "con-fusion",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": " concurrently \"npm run mock-server\" \"node server.js\" ",
+    "start": " concurrently \"ng build\" \"npm run mock-server\" \"node server.js\" ",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "server":"node server.js",
-    "mock-server": "json-server db.json -d 2000 --port 3000",
-    "postinstall": "ng build --aot --target=production"
+    "mock-server": "json-server db.json -d 2000 --port 3000"
   },
   "engines": {
     "node": "8.7.0",
