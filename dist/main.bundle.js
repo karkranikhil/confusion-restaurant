@@ -363,6 +363,7 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_3__angular_forms__["d" /* FormsModule */],
             __WEBPACK_IMPORTED_MODULE_4__angular_http__["HttpModule"],
             __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */],
+            __WEBPACK_IMPORTED_MODULE_6__angular_material__["j" /* MatIconModule */],
             __WEBPACK_IMPORTED_MODULE_6__angular_material__["a" /* MatButtonModule */], __WEBPACK_IMPORTED_MODULE_6__angular_material__["c" /* MatCheckboxModule */], __WEBPACK_IMPORTED_MODULE_6__angular_material__["d" /* MatDatepickerModule */], __WEBPACK_IMPORTED_MODULE_6__angular_material__["h" /* MatFormFieldModule */],
             __WEBPACK_IMPORTED_MODULE_6__angular_material__["k" /* MatInputModule */], __WEBPACK_IMPORTED_MODULE_6__angular_material__["n" /* MatRadioModule */], __WEBPACK_IMPORTED_MODULE_6__angular_material__["o" /* MatSelectModule */], __WEBPACK_IMPORTED_MODULE_6__angular_material__["q" /* MatSliderModule */],
             __WEBPACK_IMPORTED_MODULE_6__angular_material__["p" /* MatSlideToggleModule */], __WEBPACK_IMPORTED_MODULE_6__angular_material__["r" /* MatToolbarModule */], __WEBPACK_IMPORTED_MODULE_6__angular_material__["l" /* MatListModule */], __WEBPACK_IMPORTED_MODULE_6__angular_material__["i" /* MatGridListModule */],
