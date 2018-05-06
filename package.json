@@ -9,12 +9,11 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "mock-server": "json-server db.json -d 2000 --port 3000",
-    "postinstall": "ng build --aot -prod"
+    "mock-server": "json-server db.json -d 2000 --port 3000"
   },
   "engines": {
-    "node": "^6.11.0",
-    "npm": "^3.10.10"
+    "node": "8.7.0",
+    "npm": "5.14.12"
   },
   "private": true,
   "dependencies": {
