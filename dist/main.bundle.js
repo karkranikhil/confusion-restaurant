@@ -65,7 +65,7 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 
 
 
-var AboutComponent = /** @class */ (function () {
+var AboutComponent = (function () {
     function AboutComponent(leaderService, BaseURL) {
         this.leaderService = leaderService;
         this.BaseURL = BaseURL;
@@ -75,28 +75,28 @@ var AboutComponent = /** @class */ (function () {
         this.leaderService.getLeaders()
             .subscribe(function (leaders) { return _this.leaders = leaders; }, function (errmess) { return _this.leaderErrMess = errmess; });
     };
-    AboutComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'app-about',
-            template: __webpack_require__("../../../../../src/app/about/about.component.html"),
-            styles: [__webpack_require__("../../../../../src/app/about/about.component.scss")],
-            encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewEncapsulation"].None,
-            host: {
-                '[@flyInOut]': 'true',
-                'style': 'display:block;'
-            },
-            animations: [
-                Object(__WEBPACK_IMPORTED_MODULE_2__animations_app_animations__["b" /* flyInOut */])(),
-                Object(__WEBPACK_IMPORTED_MODULE_2__animations_app_animations__["a" /* expand */])()
-            ]
-        }),
-        __param(1, Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Inject"])('BaseURL')),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_leader_service__["a" /* LeaderService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_leader_service__["a" /* LeaderService */]) === "function" && _a || Object, Object])
-    ], AboutComponent);
     return AboutComponent;
-    var _a;
 }());
+AboutComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'app-about',
+        template: __webpack_require__("../../../../../src/app/about/about.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/about/about.component.scss")],
+        encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewEncapsulation"].None,
+        host: {
+            '[@flyInOut]': 'true',
+            'style': 'display:block;'
+        },
+        animations: [
+            Object(__WEBPACK_IMPORTED_MODULE_2__animations_app_animations__["b" /* flyInOut */])(),
+            Object(__WEBPACK_IMPORTED_MODULE_2__animations_app_animations__["a" /* expand */])()
+        ]
+    }),
+    __param(1, Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Inject"])('BaseURL')),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_leader_service__["a" /* LeaderService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_leader_service__["a" /* LeaderService */]) === "function" && _a || Object, Object])
+], AboutComponent);
 
+var _a;
 //# sourceMappingURL=about.component.js.map
 
 /***/ }),
@@ -167,21 +167,21 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var AppRoutingModule = /** @class */ (function () {
+var AppRoutingModule = (function () {
     function AppRoutingModule() {
     }
-    AppRoutingModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_1__angular_common__["b" /* CommonModule */],
-                __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* RouterModule */].forRoot(__WEBPACK_IMPORTED_MODULE_3__routes__["a" /* routes */])
-            ],
-            exports: [__WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* RouterModule */]],
-            declarations: []
-        })
-    ], AppRoutingModule);
     return AppRoutingModule;
 }());
+AppRoutingModule = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+        imports: [
+            __WEBPACK_IMPORTED_MODULE_1__angular_common__["b" /* CommonModule */],
+            __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* RouterModule */].forRoot(__WEBPACK_IMPORTED_MODULE_3__routes__["a" /* routes */])
+        ],
+        exports: [__WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* RouterModule */]],
+        declarations: []
+    })
+], AppRoutingModule);
 
 //# sourceMappingURL=app-routing.module.js.map
 
@@ -252,19 +252,19 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 
-var AppComponent = /** @class */ (function () {
+var AppComponent = (function () {
     function AppComponent() {
         this.title = 'app';
     }
-    AppComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'app-root',
-            template: __webpack_require__("../../../../../src/app/app.component.html"),
-            styles: [__webpack_require__("../../../../../src/app/app.component.scss")]
-        })
-    ], AppComponent);
     return AppComponent;
 }());
+AppComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'app-root',
+        template: __webpack_require__("../../../../../src/app/app.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/app.component.scss")]
+    })
+], AppComponent);
 
 //# sourceMappingURL=app.component.js.map
 
@@ -339,49 +339,49 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var AppModule = /** @class */ (function () {
+var AppModule = (function () {
     function AppModule() {
     }
-    AppModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_2__angular_core__["NgModule"])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_11__app_component__["a" /* AppComponent */],
-                __WEBPACK_IMPORTED_MODULE_12__menu_menu_component__["a" /* MenuComponent */],
-                __WEBPACK_IMPORTED_MODULE_13__dishdetail_dishdetail_component__["a" /* DishdetailComponent */],
-                __WEBPACK_IMPORTED_MODULE_14__header_header_component__["a" /* HeaderComponent */],
-                __WEBPACK_IMPORTED_MODULE_15__footer_footer_component__["a" /* FooterComponent */],
-                __WEBPACK_IMPORTED_MODULE_16__about_about_component__["a" /* AboutComponent */],
-                __WEBPACK_IMPORTED_MODULE_17__home_home_component__["a" /* HomeComponent */],
-                __WEBPACK_IMPORTED_MODULE_18__contact_contact_component__["a" /* ContactComponent */],
-                __WEBPACK_IMPORTED_MODULE_23__login_login_component__["a" /* LoginComponent */],
-                __WEBPACK_IMPORTED_MODULE_26__directives_highlight_directive__["a" /* HighlightDirective */]
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
-                __WEBPACK_IMPORTED_MODULE_3__angular_forms__["d" /* FormsModule */],
-                __WEBPACK_IMPORTED_MODULE_4__angular_http__["HttpModule"],
-                __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */],
-                __WEBPACK_IMPORTED_MODULE_6__angular_material__["a" /* MatButtonModule */], __WEBPACK_IMPORTED_MODULE_6__angular_material__["c" /* MatCheckboxModule */], __WEBPACK_IMPORTED_MODULE_6__angular_material__["d" /* MatDatepickerModule */], __WEBPACK_IMPORTED_MODULE_6__angular_material__["h" /* MatFormFieldModule */],
-                __WEBPACK_IMPORTED_MODULE_6__angular_material__["k" /* MatInputModule */], __WEBPACK_IMPORTED_MODULE_6__angular_material__["n" /* MatRadioModule */], __WEBPACK_IMPORTED_MODULE_6__angular_material__["o" /* MatSelectModule */], __WEBPACK_IMPORTED_MODULE_6__angular_material__["q" /* MatSliderModule */],
-                __WEBPACK_IMPORTED_MODULE_6__angular_material__["p" /* MatSlideToggleModule */], __WEBPACK_IMPORTED_MODULE_6__angular_material__["r" /* MatToolbarModule */], __WEBPACK_IMPORTED_MODULE_6__angular_material__["l" /* MatListModule */], __WEBPACK_IMPORTED_MODULE_6__angular_material__["i" /* MatGridListModule */],
-                __WEBPACK_IMPORTED_MODULE_6__angular_material__["b" /* MatCardModule */], __WEBPACK_IMPORTED_MODULE_6__angular_material__["j" /* MatIconModule */], __WEBPACK_IMPORTED_MODULE_6__angular_material__["m" /* MatProgressSpinnerModule */], __WEBPACK_IMPORTED_MODULE_6__angular_material__["f" /* MatDialogModule */],
-                __WEBPACK_IMPORTED_MODULE_7__angular_flex_layout__["a" /* FlexLayoutModule */], __WEBPACK_IMPORTED_MODULE_5__app_routing_app_routing_module__["a" /* AppRoutingModule */], __WEBPACK_IMPORTED_MODULE_3__angular_forms__["i" /* ReactiveFormsModule */],
-                __WEBPACK_IMPORTED_MODULE_8_ngx_restangular__["RestangularModule"].forRoot(__WEBPACK_IMPORTED_MODULE_9__shared_restConfig__["a" /* RestangularConfigFactory */])
-            ],
-            providers: [__WEBPACK_IMPORTED_MODULE_19__services_dish_service__["a" /* DishService */],
-                __WEBPACK_IMPORTED_MODULE_20__services_promotion_service__["a" /* PromotionService */],
-                __WEBPACK_IMPORTED_MODULE_21__services_leader_service__["a" /* LeaderService */],
-                __WEBPACK_IMPORTED_MODULE_22__services_feedback_service__["a" /* FeedbackService */],
-                { provide: 'BaseURL', useValue: __WEBPACK_IMPORTED_MODULE_24__shared_baseUrl__["a" /* baseURL */] },
-                __WEBPACK_IMPORTED_MODULE_25__services_process_httpmsg_service__["a" /* ProcessHttpmsgService */]],
-            entryComponents: [
-                __WEBPACK_IMPORTED_MODULE_23__login_login_component__["a" /* LoginComponent */]
-            ],
-            bootstrap: [__WEBPACK_IMPORTED_MODULE_11__app_component__["a" /* AppComponent */]]
-        })
-    ], AppModule);
     return AppModule;
 }());
+AppModule = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_2__angular_core__["NgModule"])({
+        declarations: [
+            __WEBPACK_IMPORTED_MODULE_11__app_component__["a" /* AppComponent */],
+            __WEBPACK_IMPORTED_MODULE_12__menu_menu_component__["a" /* MenuComponent */],
+            __WEBPACK_IMPORTED_MODULE_13__dishdetail_dishdetail_component__["a" /* DishdetailComponent */],
+            __WEBPACK_IMPORTED_MODULE_14__header_header_component__["a" /* HeaderComponent */],
+            __WEBPACK_IMPORTED_MODULE_15__footer_footer_component__["a" /* FooterComponent */],
+            __WEBPACK_IMPORTED_MODULE_16__about_about_component__["a" /* AboutComponent */],
+            __WEBPACK_IMPORTED_MODULE_17__home_home_component__["a" /* HomeComponent */],
+            __WEBPACK_IMPORTED_MODULE_18__contact_contact_component__["a" /* ContactComponent */],
+            __WEBPACK_IMPORTED_MODULE_23__login_login_component__["a" /* LoginComponent */],
+            __WEBPACK_IMPORTED_MODULE_26__directives_highlight_directive__["a" /* HighlightDirective */]
+        ],
+        imports: [
+            __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
+            __WEBPACK_IMPORTED_MODULE_3__angular_forms__["d" /* FormsModule */],
+            __WEBPACK_IMPORTED_MODULE_4__angular_http__["HttpModule"],
+            __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */],
+            __WEBPACK_IMPORTED_MODULE_6__angular_material__["a" /* MatButtonModule */], __WEBPACK_IMPORTED_MODULE_6__angular_material__["c" /* MatCheckboxModule */], __WEBPACK_IMPORTED_MODULE_6__angular_material__["d" /* MatDatepickerModule */], __WEBPACK_IMPORTED_MODULE_6__angular_material__["h" /* MatFormFieldModule */],
+            __WEBPACK_IMPORTED_MODULE_6__angular_material__["k" /* MatInputModule */], __WEBPACK_IMPORTED_MODULE_6__angular_material__["n" /* MatRadioModule */], __WEBPACK_IMPORTED_MODULE_6__angular_material__["o" /* MatSelectModule */], __WEBPACK_IMPORTED_MODULE_6__angular_material__["q" /* MatSliderModule */],
+            __WEBPACK_IMPORTED_MODULE_6__angular_material__["p" /* MatSlideToggleModule */], __WEBPACK_IMPORTED_MODULE_6__angular_material__["r" /* MatToolbarModule */], __WEBPACK_IMPORTED_MODULE_6__angular_material__["l" /* MatListModule */], __WEBPACK_IMPORTED_MODULE_6__angular_material__["i" /* MatGridListModule */],
+            __WEBPACK_IMPORTED_MODULE_6__angular_material__["b" /* MatCardModule */], __WEBPACK_IMPORTED_MODULE_6__angular_material__["j" /* MatIconModule */], __WEBPACK_IMPORTED_MODULE_6__angular_material__["m" /* MatProgressSpinnerModule */], __WEBPACK_IMPORTED_MODULE_6__angular_material__["f" /* MatDialogModule */],
+            __WEBPACK_IMPORTED_MODULE_7__angular_flex_layout__["a" /* FlexLayoutModule */], __WEBPACK_IMPORTED_MODULE_5__app_routing_app_routing_module__["a" /* AppRoutingModule */], __WEBPACK_IMPORTED_MODULE_3__angular_forms__["i" /* ReactiveFormsModule */],
+            __WEBPACK_IMPORTED_MODULE_8_ngx_restangular__["RestangularModule"].forRoot(__WEBPACK_IMPORTED_MODULE_9__shared_restConfig__["a" /* RestangularConfigFactory */])
+        ],
+        providers: [__WEBPACK_IMPORTED_MODULE_19__services_dish_service__["a" /* DishService */],
+            __WEBPACK_IMPORTED_MODULE_20__services_promotion_service__["a" /* PromotionService */],
+            __WEBPACK_IMPORTED_MODULE_21__services_leader_service__["a" /* LeaderService */],
+            __WEBPACK_IMPORTED_MODULE_22__services_feedback_service__["a" /* FeedbackService */],
+            { provide: 'BaseURL', useValue: __WEBPACK_IMPORTED_MODULE_24__shared_baseUrl__["a" /* baseURL */] },
+            __WEBPACK_IMPORTED_MODULE_25__services_process_httpmsg_service__["a" /* ProcessHttpmsgService */]],
+        entryComponents: [
+            __WEBPACK_IMPORTED_MODULE_23__login_login_component__["a" /* LoginComponent */]
+        ],
+        bootstrap: [__WEBPACK_IMPORTED_MODULE_11__app_component__["a" /* AppComponent */]]
+    })
+], AppModule);
 
 //# sourceMappingURL=app.module.js.map
 
@@ -436,7 +436,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var ContactComponent = /** @class */ (function () {
+var ContactComponent = (function () {
     function ContactComponent(fb, feedbackService) {
         this.fb = fb;
         this.feedbackService = feedbackService;
@@ -533,27 +533,27 @@ var ContactComponent = /** @class */ (function () {
             message: ''
         });
     };
-    ContactComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'app-contact',
-            template: __webpack_require__("../../../../../src/app/contact/contact.component.html"),
-            styles: [__webpack_require__("../../../../../src/app/contact/contact.component.scss")],
-            encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewEncapsulation"].None,
-            host: {
-                '[@flyInOut]': 'true',
-                'style': 'display:block;'
-            },
-            animations: [
-                Object(__WEBPACK_IMPORTED_MODULE_3__animations_app_animations__["b" /* flyInOut */])(), ,
-                Object(__WEBPACK_IMPORTED_MODULE_3__animations_app_animations__["a" /* expand */])()
-            ]
-        }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_forms__["b" /* FormBuilder */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_forms__["b" /* FormBuilder */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_4__services_feedback_service__["a" /* FeedbackService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__services_feedback_service__["a" /* FeedbackService */]) === "function" && _b || Object])
-    ], ContactComponent);
     return ContactComponent;
-    var _a, _b;
 }());
+ContactComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'app-contact',
+        template: __webpack_require__("../../../../../src/app/contact/contact.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/contact/contact.component.scss")],
+        encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewEncapsulation"].None,
+        host: {
+            '[@flyInOut]': 'true',
+            'style': 'display:block;'
+        },
+        animations: [
+            Object(__WEBPACK_IMPORTED_MODULE_3__animations_app_animations__["b" /* flyInOut */])(), ,
+            Object(__WEBPACK_IMPORTED_MODULE_3__animations_app_animations__["a" /* expand */])()
+        ]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_forms__["b" /* FormBuilder */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_forms__["b" /* FormBuilder */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_4__services_feedback_service__["a" /* FeedbackService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__services_feedback_service__["a" /* FeedbackService */]) === "function" && _b || Object])
+], ContactComponent);
 
+var _a, _b;
 //# sourceMappingURL=contact.component.js.map
 
 /***/ }),
@@ -574,7 +574,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-var HighlightDirective = /** @class */ (function () {
+var HighlightDirective = (function () {
     function HighlightDirective(el, renderer) {
         this.el = el;
         this.renderer = renderer;
@@ -585,28 +585,28 @@ var HighlightDirective = /** @class */ (function () {
     HighlightDirective.prototype.onmouseleave = function () {
         this.renderer.removeClass(this.el.nativeElement, 'highlight');
     };
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["HostListener"])('mouseenter'),
-        __metadata("design:type", Function),
-        __metadata("design:paramtypes", []),
-        __metadata("design:returntype", void 0)
-    ], HighlightDirective.prototype, "onmouseenter", null);
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["HostListener"])('mouseleave'),
-        __metadata("design:type", Function),
-        __metadata("design:paramtypes", []),
-        __metadata("design:returntype", void 0)
-    ], HighlightDirective.prototype, "onmouseleave", null);
-    HighlightDirective = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Directive"])({
-            selector: '[appHighlight]'
-        }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["Renderer2"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["Renderer2"]) === "function" && _b || Object])
-    ], HighlightDirective);
     return HighlightDirective;
-    var _a, _b;
 }());
+__decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["HostListener"])('mouseenter'),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", []),
+    __metadata("design:returntype", void 0)
+], HighlightDirective.prototype, "onmouseenter", null);
+__decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["HostListener"])('mouseleave'),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", []),
+    __metadata("design:returntype", void 0)
+], HighlightDirective.prototype, "onmouseleave", null);
+HighlightDirective = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Directive"])({
+        selector: '[appHighlight]'
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["Renderer2"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["Renderer2"]) === "function" && _b || Object])
+], HighlightDirective);
 
+var _a, _b;
 //# sourceMappingURL=highlight.directive.js.map
 
 /***/ }),
@@ -668,7 +668,7 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 
 
 
-var DishdetailComponent = /** @class */ (function () {
+var DishdetailComponent = (function () {
     function DishdetailComponent(dishservice, route, location, cmt, BaseURL) {
         this.dishservice = dishservice;
         this.route = route;
@@ -757,29 +757,29 @@ var DishdetailComponent = /** @class */ (function () {
     DishdetailComponent.prototype.goBack = function () {
         this.location.back();
     };
-    DishdetailComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'app-dishdetail',
-            template: __webpack_require__("../../../../../src/app/dishdetail/dishdetail.component.html"),
-            styles: [__webpack_require__("../../../../../src/app/dishdetail/dishdetail.component.scss")],
-            encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewEncapsulation"].None,
-            host: {
-                '[@flyInOut]': 'true',
-                'style': 'display:block;'
-            },
-            animations: [
-                Object(__WEBPACK_IMPORTED_MODULE_6__animations_app_animations__["b" /* flyInOut */])(),
-                Object(__WEBPACK_IMPORTED_MODULE_6__animations_app_animations__["c" /* visibility */])(),
-                Object(__WEBPACK_IMPORTED_MODULE_6__animations_app_animations__["a" /* expand */])()
-            ]
-        }),
-        __param(4, Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Inject"])('BaseURL')),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__services_dish_service__["a" /* DishService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_dish_service__["a" /* DishService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__angular_common__["f" /* Location */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__angular_common__["f" /* Location */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__angular_forms__["b" /* FormBuilder */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_forms__["b" /* FormBuilder */]) === "function" && _d || Object, Object])
-    ], DishdetailComponent);
     return DishdetailComponent;
-    var _a, _b, _c, _d;
 }());
+DishdetailComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'app-dishdetail',
+        template: __webpack_require__("../../../../../src/app/dishdetail/dishdetail.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/dishdetail/dishdetail.component.scss")],
+        encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewEncapsulation"].None,
+        host: {
+            '[@flyInOut]': 'true',
+            'style': 'display:block;'
+        },
+        animations: [
+            Object(__WEBPACK_IMPORTED_MODULE_6__animations_app_animations__["b" /* flyInOut */])(),
+            Object(__WEBPACK_IMPORTED_MODULE_6__animations_app_animations__["c" /* visibility */])(),
+            Object(__WEBPACK_IMPORTED_MODULE_6__animations_app_animations__["a" /* expand */])()
+        ]
+    }),
+    __param(4, Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Inject"])('BaseURL')),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__services_dish_service__["a" /* DishService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_dish_service__["a" /* DishService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__angular_common__["f" /* Location */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__angular_common__["f" /* Location */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__angular_forms__["b" /* FormBuilder */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_forms__["b" /* FormBuilder */]) === "function" && _d || Object, Object])
+], DishdetailComponent);
 
+var _a, _b, _c, _d;
 //# sourceMappingURL=dishdetail.component.js.map
 
 /***/ }),
@@ -825,22 +825,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-var FooterComponent = /** @class */ (function () {
+var FooterComponent = (function () {
     function FooterComponent() {
     }
     FooterComponent.prototype.ngOnInit = function () {
     };
-    FooterComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'app-footer',
-            template: __webpack_require__("../../../../../src/app/footer/footer.component.html"),
-            styles: [__webpack_require__("../../../../../src/app/footer/footer.component.scss")],
-            encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewEncapsulation"].None
-        }),
-        __metadata("design:paramtypes", [])
-    ], FooterComponent);
     return FooterComponent;
 }());
+FooterComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'app-footer',
+        template: __webpack_require__("../../../../../src/app/footer/footer.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/footer/footer.component.scss")],
+        encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewEncapsulation"].None
+    }),
+    __metadata("design:paramtypes", [])
+], FooterComponent);
 
 //# sourceMappingURL=footer.component.js.map
 
@@ -891,7 +891,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var HeaderComponent = /** @class */ (function () {
+var HeaderComponent = (function () {
     function HeaderComponent(dialog) {
         this.dialog = dialog;
     }
@@ -900,19 +900,19 @@ var HeaderComponent = /** @class */ (function () {
     HeaderComponent.prototype.openLoginForm = function () {
         this.dialog.open(__WEBPACK_IMPORTED_MODULE_2__login_login_component__["a" /* LoginComponent */], { width: '500px', height: '450px' });
     };
-    HeaderComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'app-header',
-            template: __webpack_require__("../../../../../src/app/header/header.component.html"),
-            styles: [__webpack_require__("../../../../../src/app/header/header.component.scss")],
-            encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewEncapsulation"].None
-        }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_material__["e" /* MatDialog */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_material__["e" /* MatDialog */]) === "function" && _a || Object])
-    ], HeaderComponent);
     return HeaderComponent;
-    var _a;
 }());
+HeaderComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'app-header',
+        template: __webpack_require__("../../../../../src/app/header/header.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/header/header.component.scss")],
+        encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewEncapsulation"].None
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_material__["e" /* MatDialog */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_material__["e" /* MatDialog */]) === "function" && _a || Object])
+], HeaderComponent);
 
+var _a;
 //# sourceMappingURL=header.component.js.map
 
 /***/ }),
@@ -970,7 +970,7 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 
 
 //import { expand } from 'rxjs/operators/expand';
-var HomeComponent = /** @class */ (function () {
+var HomeComponent = (function () {
     function HomeComponent(dishservice, promotionservice, leaderService, BaseURL) {
         this.dishservice = dishservice;
         this.promotionservice = promotionservice;
@@ -986,27 +986,27 @@ var HomeComponent = /** @class */ (function () {
         this.leaderService.getFeaturedLeader()
             .subscribe(function (leader) { return _this.leader = leader; }, function (errmess) { return _this.leaderErrMess = errmess; });
     };
-    HomeComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'app-home',
-            template: __webpack_require__("../../../../../src/app/home/home.component.html"),
-            styles: [__webpack_require__("../../../../../src/app/home/home.component.scss")],
-            host: {
-                '[@flyInOut]': 'true',
-                'style': 'display:block;'
-            },
-            animations: [
-                Object(__WEBPACK_IMPORTED_MODULE_4__animations_app_animations__["b" /* flyInOut */])(),
-                Object(__WEBPACK_IMPORTED_MODULE_4__animations_app_animations__["a" /* expand */])()
-            ]
-        }),
-        __param(3, Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Inject"])('BaseURL')),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_dish_service__["a" /* DishService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_dish_service__["a" /* DishService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_promotion_service__["a" /* PromotionService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_promotion_service__["a" /* PromotionService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__services_leader_service__["a" /* LeaderService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_leader_service__["a" /* LeaderService */]) === "function" && _c || Object, Object])
-    ], HomeComponent);
     return HomeComponent;
-    var _a, _b, _c;
 }());
+HomeComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'app-home',
+        template: __webpack_require__("../../../../../src/app/home/home.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/home/home.component.scss")],
+        host: {
+            '[@flyInOut]': 'true',
+            'style': 'display:block;'
+        },
+        animations: [
+            Object(__WEBPACK_IMPORTED_MODULE_4__animations_app_animations__["b" /* flyInOut */])(),
+            Object(__WEBPACK_IMPORTED_MODULE_4__animations_app_animations__["a" /* expand */])()
+        ]
+    }),
+    __param(3, Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Inject"])('BaseURL')),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_dish_service__["a" /* DishService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_dish_service__["a" /* DishService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_promotion_service__["a" /* PromotionService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_promotion_service__["a" /* PromotionService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__services_leader_service__["a" /* LeaderService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_leader_service__["a" /* LeaderService */]) === "function" && _c || Object, Object])
+], HomeComponent);
 
+var _a, _b, _c;
 //# sourceMappingURL=home.component.js.map
 
 /***/ }),
@@ -1054,7 +1054,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-var LoginComponent = /** @class */ (function () {
+var LoginComponent = (function () {
     function LoginComponent(dialogRef) {
         this.dialogRef = dialogRef;
         this.user = { username: '', password: '', remember: false };
@@ -1065,18 +1065,18 @@ var LoginComponent = /** @class */ (function () {
         console.log("user:", this.user);
         this.dialogRef.close();
     };
-    LoginComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'app-login',
-            template: __webpack_require__("../../../../../src/app/login/login.component.html"),
-            styles: [__webpack_require__("../../../../../src/app/login/login.component.scss")]
-        }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_material__["g" /* MatDialogRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_material__["g" /* MatDialogRef */]) === "function" && _a || Object])
-    ], LoginComponent);
     return LoginComponent;
-    var _a;
 }());
+LoginComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'app-login',
+        template: __webpack_require__("../../../../../src/app/login/login.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/login/login.component.scss")]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_material__["g" /* MatDialogRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_material__["g" /* MatDialogRef */]) === "function" && _a || Object])
+], LoginComponent);
 
+var _a;
 //# sourceMappingURL=login.component.js.map
 
 /***/ }),
@@ -1129,7 +1129,7 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 
 
 
-var MenuComponent = /** @class */ (function () {
+var MenuComponent = (function () {
     //selectedDish: Dish;
     function MenuComponent(dishService, BaseURL) {
         this.dishService = dishService;
@@ -1140,28 +1140,28 @@ var MenuComponent = /** @class */ (function () {
         this.dishService.getDishes()
             .subscribe(function (dishes) { return _this.dishes = dishes; }, function (errmess) { return _this.errMess = errmess; });
     };
-    MenuComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'app-menu',
-            template: __webpack_require__("../../../../../src/app/menu/menu.component.html"),
-            styles: [__webpack_require__("../../../../../src/app/menu/menu.component.scss")],
-            encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewEncapsulation"].None,
-            host: {
-                '[@flyInOut]': 'true',
-                'style': 'display:block;'
-            },
-            animations: [
-                Object(__WEBPACK_IMPORTED_MODULE_2__animations_app_animations__["b" /* flyInOut */])(),
-                Object(__WEBPACK_IMPORTED_MODULE_2__animations_app_animations__["a" /* expand */])()
-            ]
-        }),
-        __param(1, Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Inject"])('BaseURL')),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_dish_service__["a" /* DishService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_dish_service__["a" /* DishService */]) === "function" && _a || Object, Object])
-    ], MenuComponent);
     return MenuComponent;
-    var _a;
 }());
+MenuComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'app-menu',
+        template: __webpack_require__("../../../../../src/app/menu/menu.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/menu/menu.component.scss")],
+        encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewEncapsulation"].None,
+        host: {
+            '[@flyInOut]': 'true',
+            'style': 'display:block;'
+        },
+        animations: [
+            Object(__WEBPACK_IMPORTED_MODULE_2__animations_app_animations__["b" /* flyInOut */])(),
+            Object(__WEBPACK_IMPORTED_MODULE_2__animations_app_animations__["a" /* expand */])()
+        ]
+    }),
+    __param(1, Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Inject"])('BaseURL')),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_dish_service__["a" /* DishService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_dish_service__["a" /* DishService */]) === "function" && _a || Object, Object])
+], MenuComponent);
 
+var _a;
 //# sourceMappingURL=menu.component.js.map
 
 /***/ }),
@@ -1193,7 +1193,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var DishService = /** @class */ (function () {
+var DishService = (function () {
     function DishService(restangular) {
         this.restangular = restangular;
     }
@@ -1212,14 +1212,14 @@ var DishService = /** @class */ (function () {
             .map(function (dishes) { return dishes.map(function (dish) { return dish.id; }); })
             .catch(function (error) { return error; });
     };
-    DishService = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ngx_restangular__["Restangular"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ngx_restangular__["Restangular"]) === "function" && _a || Object])
-    ], DishService);
     return DishService;
-    var _a;
 }());
+DishService = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ngx_restangular__["Restangular"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ngx_restangular__["Restangular"]) === "function" && _a || Object])
+], DishService);
 
+var _a;
 //# sourceMappingURL=dish.service.js.map
 
 /***/ }),
@@ -1243,21 +1243,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-var FeedbackService = /** @class */ (function () {
+var FeedbackService = (function () {
     function FeedbackService(restangular) {
         this.restangular = restangular;
     }
     FeedbackService.prototype.submitFeedback = function (data) {
         return this.restangular.all("feedback").post(data);
     };
-    FeedbackService = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ngx_restangular__["Restangular"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ngx_restangular__["Restangular"]) === "function" && _a || Object])
-    ], FeedbackService);
     return FeedbackService;
-    var _a;
 }());
+FeedbackService = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ngx_restangular__["Restangular"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ngx_restangular__["Restangular"]) === "function" && _a || Object])
+], FeedbackService);
 
+var _a;
 //# sourceMappingURL=feedback.service.js.map
 
 /***/ }),
@@ -1290,7 +1290,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var LeaderService = /** @class */ (function () {
+var LeaderService = (function () {
     function LeaderService(restangular) {
         this.restangular = restangular;
     }
@@ -1319,14 +1319,14 @@ var LeaderService = /** @class */ (function () {
         return this.restangular.all('LEADERS').getList({ featured: true })
             .map(function (LEADERS) { return LEADERS[0]; });
     };
-    LeaderService = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ngx_restangular__["Restangular"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ngx_restangular__["Restangular"]) === "function" && _a || Object])
-    ], LeaderService);
     return LeaderService;
-    var _a;
 }());
+LeaderService = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ngx_restangular__["Restangular"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ngx_restangular__["Restangular"]) === "function" && _a || Object])
+], LeaderService);
 
+var _a;
 //# sourceMappingURL=leader.service.js.map
 
 /***/ }),
@@ -1354,7 +1354,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var ProcessHttpmsgService = /** @class */ (function () {
+var ProcessHttpmsgService = (function () {
     function ProcessHttpmsgService() {
     }
     ProcessHttpmsgService.prototype.extractData = function (res) {
@@ -1375,12 +1375,12 @@ var ProcessHttpmsgService = /** @class */ (function () {
         console.error(errMsg);
         return __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__["a" /* Observable */].throw(errMsg);
     };
-    ProcessHttpmsgService = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-        __metadata("design:paramtypes", [])
-    ], ProcessHttpmsgService);
     return ProcessHttpmsgService;
 }());
+ProcessHttpmsgService = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
+    __metadata("design:paramtypes", [])
+], ProcessHttpmsgService);
 
 //# sourceMappingURL=process-httpmsg.service.js.map
 
@@ -1414,7 +1414,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var PromotionService = /** @class */ (function () {
+var PromotionService = (function () {
     function PromotionService(restangular) {
         this.restangular = restangular;
     }
@@ -1443,14 +1443,14 @@ var PromotionService = /** @class */ (function () {
         return this.restangular.all('PROMOTIONS').getList({ featured: true })
             .map(function (PROMOTIONS) { return PROMOTIONS[0]; });
     };
-    PromotionService = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ngx_restangular__["Restangular"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ngx_restangular__["Restangular"]) === "function" && _a || Object])
-    ], PromotionService);
     return PromotionService;
-    var _a;
 }());
+PromotionService = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ngx_restangular__["Restangular"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ngx_restangular__["Restangular"]) === "function" && _a || Object])
+], PromotionService);
 
+var _a;
 //# sourceMappingURL=promotion.service.js.map
 
 /***/ }),
@@ -1481,7 +1481,7 @@ var baseURL = 'http://localhost:3000/';
 "use strict";
 /* unused harmony export Feedback */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ContactType; });
-var Feedback = /** @class */ (function () {
+var Feedback = (function () {
     function Feedback() {
     }
     return Feedback;
@@ -1517,6 +1517,7 @@ function RestangularConfigFactory(RestangularProvider) {
 // The build system defaults to the dev environment which uses `environment.ts`, but if you do
 // `ng build --env=prod` then `environment.prod.ts` will be used instead.
 // The list of which env maps to which file can be found in `.angular-cli.json`.
+// The file contents for the current environment will overwrite these during build.
 var environment = {
     production: false
 };
